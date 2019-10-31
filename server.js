@@ -58,7 +58,7 @@ getDealsInfo = dealsUrl => {
                      volume_24h: volume,
                 });
 
-                console.log(Currency,'--',push,'--',volume);
+                console.log(Currency,'--',Pair,'--',volume);
              }
             
             //return false
