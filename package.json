@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "jade": "^1.11.0",
+    "mongoose": "^5.4.20",
+    "nodemon": "^1.19.4",
+    "pixelmatch": "^5.1.0",
+    "request-promise": "^4.2.4",
+    "twilio": "^3.36.0"
+  }
+}
