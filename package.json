@@ -1,25 +1,47 @@
 {
-  "name": "server",
+  "name": "MagicTabApp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "MagicTabApp site scrapping using node.js and react.j",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Phantom Nam",
+  "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.2",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "cron-scheduler": "^1.2.0",
+    "cryptr": "^4.0.2",
+    "csv": "^5.1.1",
+    "csv-parser": "^2.3.0",
+    "date-and-time": "^0.6.3",
     "express": "^4.16.4",
-    "faker": "^4.1.0",
-    "jade": "^1.11.0",
-    "mongoose": "^5.4.20",
-    "nodemon": "^1.19.4",
-    "pixelmatch": "^5.1.0",
-    "request-promise": "^4.2.4",
-    "twilio": "^3.36.0"
-  }
+    "express-fileupload": "^1.1.4",
+    "https": "^1.0.0",
+    "json2csv": "^4.5.1",
+    "mongodb": "^3.2.2",
+    "mongoose": "^5.4.3",
+    "mysql": "^2.17.1",
+    "node-gyp": "^3.8.0",
+    "nodemailer": "^6.0.0",
+    "product-scraper": "^0.1.1",
+    "puppeteer": "^1.12.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "uniqid": "^5.0.3",
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "keywords": []
 }
